@@ -1,0 +1,75 @@
+[
+  {
+    "nom": "Dupont",
+    "prenom": "Jean",
+    "matricule": "ETU001",
+    "niveau": "L1"
+  },
+  {
+    "nom": "Martin",
+    "prenom": "Marie",
+    "matricule": "ETU002",
+    "niveau": "L1"
+  },
+  {
+    "nom": "Bernard",
+    "prenom": "Pierre",
+    "matricule": "ETU003",
+    "niveau": "L1"
+  },
+  {
+    "nom": "Dubois",
+    "prenom": "Sophie",
+    "matricule": "ETU004",
+    "niveau": "L1"
+  },
+  {
+    "nom": "Laurent",
+    "prenom": "Thomas",
+    "matricule": "ETU005",
+    "niveau": "L2"
+  },
+  {
+    "nom": "Moreau",
+    "prenom": "Julie",
+    "matricule": "ETU006",
+    "niveau": "L2"
+  },
+  {
+    "nom": "Simon",
+    "prenom": "Lucas",
+    "matricule": "ETU007",
+    "niveau": "L2"
+  },
+  {
+    "nom": "Michel",
+    "prenom": "Emma",
+    "matricule": "ETU008",
+    "niveau": "L2"
+  },
+  {
+    "nom": "Garcia",
+    "prenom": "Antoine",
+    "matricule": "ETU009",
+    "niveau": "L3"
+  },
+  {
+    "nom": "David",
+    "prenom": "Camille",
+    "matricule": "ETU010",
+    "niveau": "L3"
+  },
+  {
+    "nom": "Bertrand",
+    "prenom": "Nicolas",
+    "matricule": "ETU011",
+    "niveau": "L3"
+  },
+  {
+    "nom": "Roux",
+    "prenom": "Laura",
+    "matricule": "ETU012",
+    "niveau": "L3"
+  }
+]
+

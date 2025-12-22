@@ -1,0 +1,57 @@
+[
+  {
+    "nom": "Mathématiques",
+    "code": "MATH",
+    "coefficient": 3.0,
+    "niveau": "L1"
+  },
+  {
+    "nom": "Physique",
+    "code": "PHYS",
+    "coefficient": 2.5,
+    "niveau": "L1"
+  },
+  {
+    "nom": "Informatique",
+    "code": "INFO",
+    "coefficient": 4.0,
+    "niveau": "L1"
+  },
+  {
+    "nom": "Mathématiques",
+    "code": "MATH2",
+    "coefficient": 3.0,
+    "niveau": "L2"
+  },
+  {
+    "nom": "Algorithmique",
+    "code": "ALGO",
+    "coefficient": 3.5,
+    "niveau": "L2"
+  },
+  {
+    "nom": "Base de données",
+    "code": "BDD",
+    "coefficient": 3.0,
+    "niveau": "L2"
+  },
+  {
+    "nom": "Intelligence Artificielle",
+    "code": "IA",
+    "coefficient": 4.0,
+    "niveau": "L3"
+  },
+  {
+    "nom": "Réseaux",
+    "code": "RES",
+    "coefficient": 2.5,
+    "niveau": "L3"
+  },
+  {
+    "nom": "Projet",
+    "code": "PROJ",
+    "coefficient": 5.0,
+    "niveau": "L3"
+  }
+]
+

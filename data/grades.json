@@ -1,0 +1,219 @@
+[
+  {
+    "matricule_etudiant": "ETU001",
+    "code_matiere": "MATH",
+    "note": 15.5,
+    "date": "2024-10-15"
+  },
+  {
+    "matricule_etudiant": "ETU001",
+    "code_matiere": "PHYS",
+    "note": 14.0,
+    "date": "2024-10-16"
+  },
+  {
+    "matricule_etudiant": "ETU001",
+    "code_matiere": "INFO",
+    "note": 16.5,
+    "date": "2024-10-17"
+  },
+  {
+    "matricule_etudiant": "ETU002",
+    "code_matiere": "MATH",
+    "note": 18.0,
+    "date": "2024-10-15"
+  },
+  {
+    "matricule_etudiant": "ETU002",
+    "code_matiere": "PHYS",
+    "note": 17.5,
+    "date": "2024-10-16"
+  },
+  {
+    "matricule_etudiant": "ETU002",
+    "code_matiere": "INFO",
+    "note": 19.0,
+    "date": "2024-10-17"
+  },
+  {
+    "matricule_etudiant": "ETU003",
+    "code_matiere": "MATH",
+    "note": 12.0,
+    "date": "2024-10-15"
+  },
+  {
+    "matricule_etudiant": "ETU003",
+    "code_matiere": "PHYS",
+    "note": 11.5,
+    "date": "2024-10-16"
+  },
+  {
+    "matricule_etudiant": "ETU003",
+    "code_matiere": "INFO",
+    "note": 13.0,
+    "date": "2024-10-17"
+  },
+  {
+    "matricule_etudiant": "ETU004",
+    "code_matiere": "MATH",
+    "note": 14.5,
+    "date": "2024-10-15"
+  },
+  {
+    "matricule_etudiant": "ETU004",
+    "code_matiere": "PHYS",
+    "note": 15.0,
+    "date": "2024-10-16"
+  },
+  {
+    "matricule_etudiant": "ETU004",
+    "code_matiere": "INFO",
+    "note": 16.0,
+    "date": "2024-10-17"
+  },
+  {
+    "matricule_etudiant": "ETU005",
+    "code_matiere": "MATH2",
+    "note": 16.0,
+    "date": "2024-10-20"
+  },
+  {
+    "matricule_etudiant": "ETU005",
+    "code_matiere": "ALGO",
+    "note": 17.5,
+    "date": "2024-10-21"
+  },
+  {
+    "matricule_etudiant": "ETU005",
+    "code_matiere": "BDD",
+    "note": 15.5,
+    "date": "2024-10-22"
+  },
+  {
+    "matricule_etudiant": "ETU006",
+    "code_matiere": "MATH2",
+    "note": 19.0,
+    "date": "2024-10-20"
+  },
+  {
+    "matricule_etudiant": "ETU006",
+    "code_matiere": "ALGO",
+    "note": 18.5,
+    "date": "2024-10-21"
+  },
+  {
+    "matricule_etudiant": "ETU006",
+    "code_matiere": "BDD",
+    "note": 19.5,
+    "date": "2024-10-22"
+  },
+  {
+    "matricule_etudiant": "ETU007",
+    "code_matiere": "MATH2",
+    "note": 13.0,
+    "date": "2024-10-20"
+  },
+  {
+    "matricule_etudiant": "ETU007",
+    "code_matiere": "ALGO",
+    "note": 12.5,
+    "date": "2024-10-21"
+  },
+  {
+    "matricule_etudiant": "ETU007",
+    "code_matiere": "BDD",
+    "note": 14.0,
+    "date": "2024-10-22"
+  },
+  {
+    "matricule_etudiant": "ETU008",
+    "code_matiere": "MATH2",
+    "note": 15.0,
+    "date": "2024-10-20"
+  },
+  {
+    "matricule_etudiant": "ETU008",
+    "code_matiere": "ALGO",
+    "note": 16.0,
+    "date": "2024-10-21"
+  },
+  {
+    "matricule_etudiant": "ETU008",
+    "code_matiere": "BDD",
+    "note": 15.5,
+    "date": "2024-10-22"
+  },
+  {
+    "matricule_etudiant": "ETU009",
+    "code_matiere": "IA",
+    "note": 17.0,
+    "date": "2024-10-25"
+  },
+  {
+    "matricule_etudiant": "ETU009",
+    "code_matiere": "RES",
+    "note": 16.5,
+    "date": "2024-10-26"
+  },
+  {
+    "matricule_etudiant": "ETU009",
+    "code_matiere": "PROJ",
+    "note": 18.0,
+    "date": "2024-10-27"
+  },
+  {
+    "matricule_etudiant": "ETU010",
+    "code_matiere": "IA",
+    "note": 19.5,
+    "date": "2024-10-25"
+  },
+  {
+    "matricule_etudiant": "ETU010",
+    "code_matiere": "RES",
+    "note": 18.5,
+    "date": "2024-10-26"
+  },
+  {
+    "matricule_etudiant": "ETU010",
+    "code_matiere": "PROJ",
+    "note": 20.0,
+    "date": "2024-10-27"
+  },
+  {
+    "matricule_etudiant": "ETU011",
+    "code_matiere": "IA",
+    "note": 14.0,
+    "date": "2024-10-25"
+  },
+  {
+    "matricule_etudiant": "ETU011",
+    "code_matiere": "RES",
+    "note": 13.5,
+    "date": "2024-10-26"
+  },
+  {
+    "matricule_etudiant": "ETU011",
+    "code_matiere": "PROJ",
+    "note": 15.0,
+    "date": "2024-10-27"
+  },
+  {
+    "matricule_etudiant": "ETU012",
+    "code_matiere": "IA",
+    "note": 16.0,
+    "date": "2024-10-25"
+  },
+  {
+    "matricule_etudiant": "ETU012",
+    "code_matiere": "RES",
+    "note": 15.5,
+    "date": "2024-10-26"
+  },
+  {
+    "matricule_etudiant": "ETU012",
+    "code_matiere": "PROJ",
+    "note": 17.0,
+    "date": "2024-10-27"
+  }
+]
+
