@@ -1,20 +1,8 @@
 [
   {
-    "nom": "Dupont",
+    "nom": "Dupo",
     "prenom": "Jean",
     "matricule": "ETU001",
-    "niveau": "L1"
-  },
-  {
-    "nom": "Martin",
-    "prenom": "Marie",
-    "matricule": "ETU002",
-    "niveau": "L1"
-  },
-  {
-    "nom": "Bernard",
-    "prenom": "Pierre",
-    "matricule": "ETU003",
     "niveau": "L1"
   },
   {
@@ -70,6 +58,11 @@
     "prenom": "Laura",
     "matricule": "ETU012",
     "niveau": "L3"
+  },
+  {
+    "nom": "ZASSALAMEL",
+    "prenom": "MOMO",
+    "matricule": "ET050",
+    "niveau": "L5"
   }
 ]
-

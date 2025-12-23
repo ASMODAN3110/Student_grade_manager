@@ -3,7 +3,7 @@
     "nom": "Mathématiques",
     "code": "MATH",
     "coefficient": 3.0,
-    "niveau": "L1"
+    "niveau": "L2"
   },
   {
     "nom": "Physique",
@@ -27,7 +27,7 @@
     "nom": "Algorithmique",
     "code": "ALGO",
     "coefficient": 3.5,
-    "niveau": "L2"
+    "niveau": "L5"
   },
   {
     "nom": "Base de données",
@@ -54,4 +54,3 @@
     "niveau": "L3"
   }
 ]
-

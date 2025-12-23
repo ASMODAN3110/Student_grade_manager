@@ -7,9 +7,10 @@ Gère l'authentification et lance l'application
 import sys
 from services.file_manager import FileManager
 from services.menu import Menu
+from services.i18n import get_i18n
 
 
-def authenticate(file_manager: FileManager, max_attempts: int = 3) -> bool:
+def authenticate(file_manager: FileManager, i18n, max_attempts: int = 3) -> bool:
     """
     Gère l'authentification par mot de passe
     
@@ -25,35 +26,35 @@ def authenticate(file_manager: FileManager, max_attempts: int = 3) -> bool:
     password = config.get('password', 'password')  # Mot de passe par défaut
     
     print("=" * 60)
-    print("    SYSTÈME DE GESTION DES NOTES SCOLAIRES")
+    print(f"    {i18n.get('app.title')}")
     print("=" * 60)
-    print("\nAuthentification requise")
-    print(f"Vous avez {max_attempts} tentative(s) pour vous connecter\n")
+    print(f"\n{i18n.get('auth.required')}")
+    print(i18n.get('auth.attempts_remaining', max_attempts=max_attempts) + "\n")
     
     attempts = 0
     
     while attempts < max_attempts:
         try:
-            user_password = input("Mot de passe: ").strip()
+            user_password = input(i18n.get('auth.password_prompt')).strip()
             
             if user_password == password:
-                print("\n✓ Authentification réussie !")
+                print(f"\n{i18n.get('auth.success')}")
                 return True
             else:
                 attempts += 1
                 remaining = max_attempts - attempts
                 if remaining > 0:
-                    print(f"\n✗ Mot de passe incorrect. Il vous reste {remaining} tentative(s).\n")
+                    print(f"\n{i18n.get('auth.incorrect', remaining=remaining)}\n")
                 else:
-                    print("\n✗ Nombre maximum de tentatives atteint. Accès refusé.")
+                    print(f"\n{i18n.get('auth.max_attempts')}")
                     return False
         
         except KeyboardInterrupt:
             # Gérer l'interruption par Ctrl+C
-            print("\n\nInterruption par l'utilisateur. Au revoir !")
+            print(f"\n\n{i18n.get('app.interrupt')}")
             sys.exit(0)
         except Exception as e:
-            print(f"\nErreur lors de l'authentification: {e}")
+            print(i18n.get('auth.error', error=str(e)))
             attempts += 1
     
     return False
@@ -67,23 +68,50 @@ def main():
         # Initialiser le gestionnaire de fichiers
         file_manager = FileManager()
         
+        # Charger la configuration et initialiser le gestionnaire de traductions
+        config = file_manager.load_config()
+        i18n = get_i18n()
+        language = config.get('language', 'fr')
+        i18n.set_language(language)
+        
+        # Demander le mode d'exécution
+        print("=" * 60)
+        print(f"    {i18n.get('app.title')}")
+        print("=" * 60)
+        print(f"\n{i18n.get('app.mode_selection')}")
+        print(f"1. {i18n.get('app.mode_console')}")
+        print(f"2. {i18n.get('app.mode_gui')}")
+        
+        choice = input(f"\n{i18n.get('app.mode_choice')}").strip()
+        
+        if choice == "2":
+            # Lancer l'interface graphique
+            from main_gui import main as gui_main
+            gui_main()
+            return
+        
+        # Mode console (par défaut)
         # Authentification
-        if not authenticate(file_manager):
-            print("\nAccès refusé. Le programme se termine.")
+        if not authenticate(file_manager, i18n):
+            print(f"\n{i18n.get('app.access_denied')}")
             sys.exit(1)
         
         # Initialiser le système de menus
-        menu = Menu(file_manager)
+        menu = Menu(file_manager, i18n)
         
         # Lancer le menu principal
         menu.handle_main_menu()
         
     except KeyboardInterrupt:
         # Gérer l'interruption par Ctrl+C
-        print("\n\nInterruption par l'utilisateur. Au revoir !")
+        i18n = get_i18n()
+        print(f"\n\n{i18n.get('app.interrupt')}")
         sys.exit(0)
     except Exception as e:
-        print(f"\nErreur fatale: {e}")
+        i18n = get_i18n()
+        print(i18n.get('app.fatal_error', error=str(e)))
+        import traceback
+        traceback.print_exc()
         sys.exit(1)
 
 

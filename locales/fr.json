@@ -1,0 +1,406 @@
+{
+  "app": {
+    "title": "SYSTÈME DE GESTION DES NOTES SCOLAIRES",
+    "goodbye": "Au revoir !",
+    "interrupt": "Interruption par l'utilisateur. Au revoir !",
+    "fatal_error": "Erreur fatale: {error}",
+    "access_denied": "Accès refusé. Le programme se termine.",
+    "mode_selection": "Choisissez le mode d'exécution :",
+    "mode_console": "Interface console",
+    "mode_gui": "Interface graphique (GUI)",
+    "mode_choice": "Votre choix (1 ou 2): "
+  },
+  "auth": {
+    "required": "Authentification requise",
+    "attempts_remaining": "Vous avez {max_attempts} tentative(s) pour vous connecter",
+    "password_prompt": "Mot de passe: ",
+    "success": "✓ Authentification réussie !",
+    "incorrect": "✗ Mot de passe incorrect. Il vous reste {remaining} tentative(s).",
+    "max_attempts": "✗ Nombre maximum de tentatives atteint. Accès refusé.",
+    "error": "Erreur lors de l'authentification: {error}",
+    "welcome_back": "Bienvenue",
+    "enter_details": "Veuillez entrer vos identifiants pour vous connecter au portail.",
+    "username_label": "Nom d'utilisateur ou ID",
+    "username_placeholder": "Entrez votre ID",
+    "password_label": "Mot de passe",
+    "password_placeholder": "Entrez votre mot de passe",
+    "forgot_password": "Mot de passe oublié ?",
+    "sign_in": "Se connecter",
+    "no_account": "Vous n'avez pas de compte ?",
+    "contact_admin": "Contacter l'administration",
+    "secure_portal": "🔒 PORTAIL ACADÉMIQUE SÉCURISÉ",
+    "copyright": "© 2024 Systèmes Académiques Universitaires. Tous droits réservés.",
+    "academic_excellence": "L'excellence académique commence par\ndes données précises.",
+    "academic_subtitle": "Gérez en toute sécurité les dossiers étudiants, les statistiques du corps professoral,\net les métriques de performance académique en un seul endroit."
+  },
+  "menu": {
+    "main": {
+      "title": "MENU PRINCIPAL",
+      "option_1": "Gestion des étudiants",
+      "option_2": "Gestion des matières",
+      "option_3": "Saisie des notes",
+      "option_4": "Consultation des notes",
+      "option_5": "Statistiques et analyses",
+      "option_6": "Quitter",
+      "option_7": "Changer la langue",
+      "choice": "Votre choix: ",
+      "invalid": "Choix invalide !"
+    },
+    "language": {
+      "title": "CHANGEMENT DE LANGUE",
+      "current": "Langue actuelle: {lang}",
+      "option_1": "Français",
+      "option_2": "Anglais",
+      "option_3": "Retour au menu principal",
+      "changed": "Langue changée avec succès !",
+      "choice": "Votre choix: "
+    },
+    "students": {
+      "title": "GESTION DES ÉTUDIANTS",
+      "option_1": "Ajouter un étudiant",
+      "option_2": "Modifier un étudiant",
+      "option_3": "Supprimer un étudiant",
+      "option_4": "Rechercher un étudiant",
+      "option_5": "Lister les étudiants",
+      "option_6": "Retour au menu principal"
+    },
+    "subjects": {
+      "title": "GESTION DES MATIÈRES",
+      "option_1": "Ajouter une matière",
+      "option_2": "Modifier une matière",
+      "option_3": "Supprimer une matière",
+      "option_4": "Lister les matières",
+      "option_5": "Retour au menu principal"
+    },
+    "grades": {
+      "title": "SAISIE DES NOTES",
+      "option_1": "Enregistrer une note",
+      "option_2": "Modifier une note",
+      "option_3": "Supprimer une note",
+      "option_4": "Retour au menu principal"
+    },
+    "consultation": {
+      "title": "CONSULTATION DES NOTES",
+      "option_1": "Notes d'un étudiant",
+      "option_2": "Notes d'une classe pour une matière",
+      "option_3": "Bulletin complet d'un étudiant",
+      "option_4": "Retour au menu principal"
+    },
+    "statistics": {
+      "title": "STATISTIQUES ET ANALYSES",
+      "option_1": "Statistiques par étudiant",
+      "option_2": "Statistiques par classe",
+      "option_3": "Statistiques par matière",
+      "option_4": "Statistiques globales",
+      "option_5": "Retour au menu principal"
+    }
+  },
+  "students": {
+    "add": {
+      "title": "AJOUT D'UN ÉTUDIANT",
+      "name": "Nom",
+      "firstname": "Prénom",
+      "matricule": "Matricule",
+      "level": "Niveau/Classe",
+      "success": "✓ Étudiant ajouté avec succès: {student}",
+      "matricule_exists": "Erreur: Le matricule {matricule} existe déjà !",
+      "validation_error": "Erreur: {error}"
+    },
+    "modify": {
+      "title": "MODIFICATION D'UN ÉTUDIANT",
+      "matricule_prompt": "Matricule de l'étudiant à modifier",
+      "not_found": "Erreur: Aucun étudiant trouvé avec le matricule {matricule}",
+      "found": "Étudiant trouvé: {student}",
+      "keep_current": "Laissez vide pour conserver la valeur actuelle",
+      "new_name": "Nouveau nom",
+      "new_firstname": "Nouveau prénom",
+      "new_level": "Nouveau niveau",
+      "success": "✓ Étudiant modifié avec succès: {student}",
+      "validation_error": "Erreur: {error}"
+    },
+    "delete": {
+      "title": "SUPPRESSION D'UN ÉTUDIANT",
+      "matricule_prompt": "Matricule de l'étudiant à supprimer",
+      "not_found": "Erreur: Aucun étudiant trouvé avec le matricule {matricule}",
+      "found": "Étudiant trouvé: {student}",
+      "confirm": "Êtes-vous sûr de vouloir supprimer cet étudiant ? (o/n): ",
+      "success": "✓ Étudiant et ses notes supprimés avec succès",
+      "cancelled": "Suppression annulée"
+    },
+    "search": {
+      "title": "RECHERCHE D'UN ÉTUDIANT",
+      "prompt": "Matricule, nom ou prénom à rechercher",
+      "results": "{count} résultat(s) trouvé(s):",
+      "no_results": "Aucun résultat trouvé"
+    },
+    "list": {
+      "title": "LISTE DES ÉTUDIANTS",
+      "level_prompt": "Niveau/Classe (laissez vide pour tous)",
+      "results": "{count} étudiant(s) trouvé(s):",
+      "no_results": "Aucun étudiant trouvé"
+    },
+    "gui": {
+      "title": "Gestion des Étudiants",
+      "add_button": "➕ Ajouter un étudiant",
+      "modify_button": "✏️ Modifier",
+      "delete_button": "🗑️ Supprimer",
+      "add_dialog": "Ajouter un étudiant",
+      "modify_dialog": "Modifier un étudiant",
+      "save": "✓ Enregistrer",
+      "validate": "✓ Valider",
+      "cancel": "Annuler",
+      "delete_confirm": "Êtes-vous sûr de vouloir supprimer {name} ?",
+      "all_fields_required": "Tous les champs sont obligatoires",
+      "matricule_exists": "Le matricule {matricule} existe déjà",
+      "select_student": "Veuillez sélectionner un étudiant",
+      "columns": {
+        "matricule": "Matricule",
+        "name": "Nom",
+        "firstname": "Prénom",
+        "level": "Niveau"
+      }
+    }
+  },
+  "subjects": {
+    "add": {
+      "title": "AJOUT D'UNE MATIÈRE",
+      "name": "Nom de la matière",
+      "code": "Code de la matière",
+      "coefficient": "Coefficient",
+      "level": "Niveau/Classe concerné",
+      "success": "✓ Matière ajoutée avec succès: {subject}",
+      "code_exists": "Erreur: Le code {code} existe déjà !",
+      "coef_not_number": "Erreur: Le coefficient doit être un nombre",
+      "validation_error": "Erreur: {error}"
+    },
+    "modify": {
+      "title": "MODIFICATION D'UNE MATIÈRE",
+      "code_prompt": "Code de la matière à modifier",
+      "not_found": "Erreur: Aucune matière trouvée avec le code {code}",
+      "found": "Matière trouvée: {subject}",
+      "keep_current": "Laissez vide pour conserver la valeur actuelle",
+      "new_name": "Nouveau nom",
+      "new_coefficient": "Nouveau coefficient",
+      "new_level": "Nouveau niveau",
+      "success": "✓ Matière modifiée avec succès: {subject}",
+      "coef_not_number": "Erreur: Le coefficient doit être un nombre",
+      "validation_error": "Erreur: {error}"
+    },
+    "delete": {
+      "title": "SUPPRESSION D'UNE MATIÈRE",
+      "code_prompt": "Code de la matière à supprimer",
+      "not_found": "Erreur: Aucune matière trouvée avec le code {code}",
+      "found": "Matière trouvée: {subject}",
+      "confirm": "Êtes-vous sûr de vouloir supprimer cette matière ? (o/n): ",
+      "success": "✓ Matière et ses notes supprimées avec succès",
+      "cancelled": "Suppression annulée"
+    },
+    "list": {
+      "title": "LISTE DES MATIÈRES",
+      "level_prompt": "Niveau/Classe (laissez vide pour tous)",
+      "results": "{count} matière(s) trouvée(s):",
+      "no_results": "Aucune matière trouvée"
+    }
+  },
+  "grades": {
+    "add": {
+      "title": "ENREGISTREMENT D'UNE NOTE",
+      "matricule": "Matricule de l'étudiant",
+      "code": "Code de la matière",
+      "note": "Note (0-20)",
+      "success": "✓ Note enregistrée avec succès: {grade}",
+      "student_not_found": "Erreur: Aucun étudiant trouvé avec le matricule {matricule}",
+      "subject_not_found": "Erreur: Aucune matière trouvée avec le code {code}",
+      "already_exists": "Erreur: Une note existe déjà pour cet étudiant dans cette matière",
+      "existing_note": "Note existante: {note}/20",
+      "not_number": "Erreur: La note doit être un nombre",
+      "validation_error": "Erreur: {error}"
+    },
+    "modify": {
+      "title": "MODIFICATION D'UNE NOTE",
+      "matricule": "Matricule de l'étudiant",
+      "code": "Code de la matière",
+      "not_found": "Erreur: Aucune note trouvée pour cet étudiant dans cette matière",
+      "found": "Note trouvée: {note}/20",
+      "new_note": "Nouvelle note (0-20)",
+      "success": "✓ Note modifiée avec succès: {grade}",
+      "not_number": "Erreur: La note doit être un nombre",
+      "validation_error": "Erreur: {error}"
+    },
+    "delete": {
+      "title": "SUPPRESSION D'UNE NOTE",
+      "matricule": "Matricule de l'étudiant",
+      "code": "Code de la matière",
+      "not_found": "Erreur: Aucune note trouvée pour cet étudiant dans cette matière",
+      "found": "Note trouvée: {note}/20",
+      "confirm": "Êtes-vous sûr de vouloir supprimer cette note ? (o/n): ",
+      "success": "✓ Note supprimée avec succès",
+      "cancelled": "Suppression annulée"
+    }
+  },
+  "consultation": {
+    "student_grades": {
+      "title": "NOTES D'UN ÉTUDIANT",
+      "matricule": "Matricule de l'étudiant",
+      "not_found": "Erreur: Aucun étudiant trouvé avec le matricule {matricule}",
+      "student_info": "Étudiant: {student}",
+      "count": "{count} note(s) trouvée(s):",
+      "no_grades": "Aucune note enregistrée",
+      "format": "  - {subject}: {note}/20 (Date: {date})"
+    },
+    "class_grades": {
+      "title": "NOTES D'UNE CLASSE POUR UNE MATIÈRE",
+      "level": "Niveau/Classe",
+      "code": "Code de la matière",
+      "subject_not_found": "Erreur: Aucune matière trouvée avec le code {code}",
+      "subject_info": "Matière: {subject}",
+      "class_info": "Classe: {level}",
+      "count": "{count} étudiant(s) dans la classe:",
+      "format": "  - {name} ({matricule}): {note}/20",
+      "no_note": "Pas de note"
+    },
+    "bulletin": {
+      "title": "BULLETIN COMPLET D'UN ÉTUDIANT",
+      "matricule": "Matricule de l'étudiant",
+      "not_found": "Erreur: Aucun étudiant trouvé avec le matricule {matricule}",
+      "header": "BULLETIN DE NOTES",
+      "student": "Étudiant: {name}",
+      "matricule_label": "Matricule: {matricule}",
+      "level_label": "Niveau: {level}",
+      "columns": {
+        "subject": "Matière",
+        "note": "Note",
+        "coef": "Coef",
+        "points": "Points"
+      },
+      "average": "Moyenne générale: {average:.2f}/20",
+      "rank": "Rang dans la classe: {rank}{suffix}",
+      "rank_1": "er",
+      "rank_other": "ème",
+      "no_grades": "Aucune note enregistrée"
+    }
+  },
+  "statistics": {
+    "student": {
+      "title": "STATISTIQUES PAR ÉTUDIANT",
+      "matricule": "Matricule de l'étudiant",
+      "not_found": "Erreur: Aucun étudiant trouvé avec le matricule {matricule}",
+      "student_info": "Étudiant: {student}",
+      "average": "Moyenne générale: {average:.2f}/20",
+      "no_average": "Moyenne générale: Aucune note",
+      "rank": "Rang dans la classe: {rank}{suffix}",
+      "rank_1": "er",
+      "rank_other": "ème",
+      "no_rank": "Rang dans la classe: Non calculable"
+    },
+    "class": {
+      "title": "STATISTIQUES PAR CLASSE",
+      "level": "Niveau/Classe",
+      "class_info": "Classe: {level}",
+      "average": "Moyenne générale de la classe: {average:.2f}/20",
+      "no_average": "Moyenne générale: Aucune note",
+      "best_student": "Meilleur étudiant: {name} ({matricule})",
+      "best_average": "Moyenne: {average:.2f}/20",
+      "ranking_title": "Classement complet ({count} étudiant(s)):",
+      "ranking_columns": {
+        "rank": "Rang",
+        "student": "Étudiant",
+        "average": "Moyenne"
+      }
+    },
+    "subject": {
+      "title": "STATISTIQUES PAR MATIÈRE",
+      "code": "Code de la matière",
+      "subject_not_found": "Erreur: Aucune matière trouvée avec le code {code}",
+      "subject_info": "Matière: {name} ({code})",
+      "average": "Moyenne générale: {average:.2f}/20",
+      "no_average": "Moyenne générale: Aucune note",
+      "best_student": "Meilleur étudiant: {name} ({matricule})",
+      "best_note": "Note: {note:.2f}/20"
+    },
+    "global": {
+      "title": "STATISTIQUES GLOBALES",
+      "average": "Moyenne générale de l'établissement: {average:.2f}/20",
+      "no_average": "Moyenne générale: Aucune note",
+      "best_student_title": "Meilleur étudiant de l'établissement:",
+      "best_student": "  {name} ({matricule})",
+      "best_level": "  Niveau: {level}",
+      "best_average": "  Moyenne: {average:.2f}/20",
+      "total_students": "Nombre total d'étudiants: {count}",
+      "total_subjects": "Nombre total de matières: {count}",
+      "total_grades": "Nombre total de notes: {count}"
+    }
+  },
+  "common": {
+    "press_enter": "Appuyez sur Entrée pour continuer...",
+    "error": "Erreur",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "delete": "Supprimer",
+    "modify": "Modifier",
+    "add": "Ajouter",
+    "save": "Enregistrer",
+    "search": "Rechercher",
+    "list": "Lister",
+    "back": "Retour"
+  },
+  "gui": {
+    "sidebar": {
+      "logo": "📊 GradeMaster",
+      "dashboard": "📈 Dashboard",
+      "students": "👥 Students",
+      "subjects": "📚 Subjects",
+      "grades": "✓ Grades",
+      "consultation": "💬 Consultation",
+      "statistics": "📊 Reports",
+      "settings": "SETTINGS",
+      "settings_button": "⚙️ Settings",
+      "profile": "👤 Admin user\nadmin@school.edu"
+    },
+    "header": {
+      "logo": "🛡️ GradeMaster Admin",
+      "greeting_morning": "Bonjour, Admin",
+      "greeting_afternoon": "Bon après-midi, Admin",
+      "greeting_evening": "Bonsoir, Admin",
+      "sync_message": "Voici l'aperçu d'aujourd'hui. Données synchronisées: À l'instant.",
+      "import_data": "☁️ Importer des données",
+      "new_entry": "➕ Nouvelle entrée"
+    },
+    "dashboard": {
+      "title": "Tableau de bord",
+      "total_students": "ÉTUDIANTS TOTAUX",
+      "active_subjects": "MATIÈRES ACTIVES",
+      "grades_pending": "NOTES EN ATTENTE",
+      "average_gpa": "MOYENNE GLOBALE",
+      "quick_actions": "Actions rapides",
+      "add_student": "➕\nAjouter un étudiant",
+      "enter_grades": "✏️\nSaisir des notes",
+      "print_report": "🖨️\nImprimer un bulletin",
+      "enrollment_chart": "Inscription par niveau",
+      "enrollment_subtitle": "Distribution pour le trimestre en cours",
+      "gpa_trend": "Tendance de la moyenne",
+      "gpa_trend_subtitle": "Année académique 2024-2025",
+      "across_classes": "Sur {count} classes",
+      "across_levels": "Sur {count} niveaux",
+      "total_recorded": "Total des notes enregistrées",
+      "overall_average": "Moyenne globale"
+    },
+    "grades": {
+      "title": "Saisie des Notes",
+      "add_button": "➕ Enregistrer une note",
+      "student": "Étudiant:",
+      "subject": "Matière:",
+      "note": "Note (0-20):",
+      "date": "Date:",
+      "save": "Enregistrer",
+      "columns": {
+        "student": "Étudiant",
+        "subject": "Matière",
+        "note": "Note",
+        "date": "Date"
+      }
+    }
+  }
+}
+

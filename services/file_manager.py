@@ -177,14 +177,19 @@ class FileManager:
         filepath = os.path.join(self.data_dir, 'config.json')
         
         if not os.path.exists(filepath):
-            return {}
+            # Retourner la configuration par défaut avec la langue
+            return {'password': 'password', 'language': 'fr'}
         
         try:
             with open(filepath, 'r', encoding='utf-8') as f:
-                return json.load(f)
+                config = json.load(f)
+                # S'assurer que la langue est définie (par défaut 'fr')
+                if 'language' not in config:
+                    config['language'] = 'fr'
+                return config
         except Exception as e:
             print(f"Erreur lors de la lecture de config.json: {e}")
-            return {}
+            return {'password': 'password', 'language': 'fr'}
     
     def save_config(self, config: Dict[str, Any]) -> bool:
         """
@@ -205,4 +210,18 @@ class FileManager:
         except Exception as e:
             print(f"Erreur lors de l'écriture de config.json: {e}")
             return False
+    
+    def save_language(self, language: str) -> bool:
+        """
+        Sauvegarde la langue dans le fichier de configuration
+        
+        Args:
+            language (str): Code de la langue ('fr' ou 'en')
+            
+        Returns:
+            bool: True si la sauvegarde a réussi
+        """
+        config = self.load_config()
+        config['language'] = language
+        return self.save_config(config)
 

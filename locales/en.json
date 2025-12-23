@@ -1,0 +1,406 @@
+{
+  "app": {
+    "title": "STUDENT GRADE MANAGEMENT SYSTEM",
+    "goodbye": "Goodbye!",
+    "interrupt": "User interruption. Goodbye!",
+    "fatal_error": "Fatal error: {error}",
+    "access_denied": "Access denied. The program is terminating.",
+    "mode_selection": "Choose execution mode:",
+    "mode_console": "Console interface",
+    "mode_gui": "Graphical interface (GUI)",
+    "mode_choice": "Your choice (1 or 2): "
+  },
+  "auth": {
+    "required": "Authentication required",
+    "attempts_remaining": "You have {max_attempts} attempt(s) to connect",
+    "password_prompt": "Password: ",
+    "success": "✓ Authentication successful!",
+    "incorrect": "✗ Incorrect password. You have {remaining} attempt(s) remaining.",
+    "max_attempts": "✗ Maximum number of attempts reached. Access denied.",
+    "error": "Error during authentication: {error}",
+    "welcome_back": "Welcome Back",
+    "enter_details": "Please enter your details to sign in to the portal.",
+    "username_label": "Username or Faculty ID",
+    "username_placeholder": "Enter your ID",
+    "password_label": "Password",
+    "password_placeholder": "Enter your password",
+    "forgot_password": "Forgot Password?",
+    "sign_in": "Sign In",
+    "no_account": "Don't have an account?",
+    "contact_admin": "Contact Administration",
+    "secure_portal": "🔒 SECURE ACADEMIC PORTAL",
+    "copyright": "© 2024 University Academic Systems. All rights reserved.",
+    "academic_excellence": "Academic Excellence starts with\naccurate data.",
+    "academic_subtitle": "Securely manage student records, faculty statistics,\nand academic performance metrics all in one place."
+  },
+  "menu": {
+    "main": {
+      "title": "MAIN MENU",
+      "option_1": "Student management",
+      "option_2": "Subject management",
+      "option_3": "Grade entry",
+      "option_4": "Grade consultation",
+      "option_5": "Statistics and analysis",
+      "option_6": "Quit",
+      "option_7": "Change language",
+      "choice": "Your choice: ",
+      "invalid": "Invalid choice!"
+    },
+    "language": {
+      "title": "LANGUAGE CHANGE",
+      "current": "Current language: {lang}",
+      "option_1": "French",
+      "option_2": "English",
+      "option_3": "Return to main menu",
+      "changed": "Language changed successfully!",
+      "choice": "Your choice: "
+    },
+    "students": {
+      "title": "STUDENT MANAGEMENT",
+      "option_1": "Add a student",
+      "option_2": "Modify a student",
+      "option_3": "Delete a student",
+      "option_4": "Search for a student",
+      "option_5": "List students",
+      "option_6": "Return to main menu"
+    },
+    "subjects": {
+      "title": "SUBJECT MANAGEMENT",
+      "option_1": "Add a subject",
+      "option_2": "Modify a subject",
+      "option_3": "Delete a subject",
+      "option_4": "List subjects",
+      "option_5": "Return to main menu"
+    },
+    "grades": {
+      "title": "GRADE ENTRY",
+      "option_1": "Record a grade",
+      "option_2": "Modify a grade",
+      "option_3": "Delete a grade",
+      "option_4": "Return to main menu"
+    },
+    "consultation": {
+      "title": "GRADE CONSULTATION",
+      "option_1": "Student grades",
+      "option_2": "Class grades for a subject",
+      "option_3": "Complete student report card",
+      "option_4": "Return to main menu"
+    },
+    "statistics": {
+      "title": "STATISTICS AND ANALYSIS",
+      "option_1": "Statistics by student",
+      "option_2": "Statistics by class",
+      "option_3": "Statistics by subject",
+      "option_4": "Global statistics",
+      "option_5": "Return to main menu"
+    }
+  },
+  "students": {
+    "add": {
+      "title": "ADDING A STUDENT",
+      "name": "Last name",
+      "firstname": "First name",
+      "matricule": "Student ID",
+      "level": "Level/Class",
+      "success": "✓ Student added successfully: {student}",
+      "matricule_exists": "Error: Student ID {matricule} already exists!",
+      "validation_error": "Error: {error}"
+    },
+    "modify": {
+      "title": "MODIFYING A STUDENT",
+      "matricule_prompt": "Student ID to modify",
+      "not_found": "Error: No student found with ID {matricule}",
+      "found": "Student found: {student}",
+      "keep_current": "Leave empty to keep current value",
+      "new_name": "New last name",
+      "new_firstname": "New first name",
+      "new_level": "New level",
+      "success": "✓ Student modified successfully: {student}",
+      "validation_error": "Error: {error}"
+    },
+    "delete": {
+      "title": "DELETING A STUDENT",
+      "matricule_prompt": "Student ID to delete",
+      "not_found": "Error: No student found with ID {matricule}",
+      "found": "Student found: {student}",
+      "confirm": "Are you sure you want to delete this student? (y/n): ",
+      "success": "✓ Student and their grades deleted successfully",
+      "cancelled": "Deletion cancelled"
+    },
+    "search": {
+      "title": "SEARCHING FOR A STUDENT",
+      "prompt": "Student ID, last name or first name to search",
+      "results": "{count} result(s) found:",
+      "no_results": "No results found"
+    },
+    "list": {
+      "title": "LIST OF STUDENTS",
+      "level_prompt": "Level/Class (leave empty for all)",
+      "results": "{count} student(s) found:",
+      "no_results": "No students found"
+    },
+    "gui": {
+      "title": "Student Management",
+      "add_button": "➕ Add a student",
+      "modify_button": "✏️ Modify",
+      "delete_button": "🗑️ Delete",
+      "add_dialog": "Add a student",
+      "modify_dialog": "Modify a student",
+      "save": "✓ Save",
+      "validate": "✓ Validate",
+      "cancel": "Cancel",
+      "delete_confirm": "Are you sure you want to delete {name}?",
+      "all_fields_required": "All fields are required",
+      "matricule_exists": "Student ID {matricule} already exists",
+      "select_student": "Please select a student",
+      "columns": {
+        "matricule": "Student ID",
+        "name": "Last name",
+        "firstname": "First name",
+        "level": "Level"
+      }
+    }
+  },
+  "subjects": {
+    "add": {
+      "title": "ADDING A SUBJECT",
+      "name": "Subject name",
+      "code": "Subject code",
+      "coefficient": "Coefficient",
+      "level": "Level/Class concerned",
+      "success": "✓ Subject added successfully: {subject}",
+      "code_exists": "Error: Code {code} already exists!",
+      "coef_not_number": "Error: Coefficient must be a number",
+      "validation_error": "Error: {error}"
+    },
+    "modify": {
+      "title": "MODIFYING A SUBJECT",
+      "code_prompt": "Subject code to modify",
+      "not_found": "Error: No subject found with code {code}",
+      "found": "Subject found: {subject}",
+      "keep_current": "Leave empty to keep current value",
+      "new_name": "New name",
+      "new_coefficient": "New coefficient",
+      "new_level": "New level",
+      "success": "✓ Subject modified successfully: {subject}",
+      "coef_not_number": "Error: Coefficient must be a number",
+      "validation_error": "Error: {error}"
+    },
+    "delete": {
+      "title": "DELETING A SUBJECT",
+      "code_prompt": "Subject code to delete",
+      "not_found": "Error: No subject found with code {code}",
+      "found": "Subject found: {subject}",
+      "confirm": "Are you sure you want to delete this subject? (y/n): ",
+      "success": "✓ Subject and its grades deleted successfully",
+      "cancelled": "Deletion cancelled"
+    },
+    "list": {
+      "title": "LIST OF SUBJECTS",
+      "level_prompt": "Level/Class (leave empty for all)",
+      "results": "{count} subject(s) found:",
+      "no_results": "No subjects found"
+    }
+  },
+  "grades": {
+    "add": {
+      "title": "RECORDING A GRADE",
+      "matricule": "Student ID",
+      "code": "Subject code",
+      "note": "Grade (0-20)",
+      "success": "✓ Grade recorded successfully: {grade}",
+      "student_not_found": "Error: No student found with ID {matricule}",
+      "subject_not_found": "Error: No subject found with code {code}",
+      "already_exists": "Error: A grade already exists for this student in this subject",
+      "existing_note": "Existing grade: {note}/20",
+      "not_number": "Error: Grade must be a number",
+      "validation_error": "Error: {error}"
+    },
+    "modify": {
+      "title": "MODIFYING A GRADE",
+      "matricule": "Student ID",
+      "code": "Subject code",
+      "not_found": "Error: No grade found for this student in this subject",
+      "found": "Grade found: {note}/20",
+      "new_note": "New grade (0-20)",
+      "success": "✓ Grade modified successfully: {grade}",
+      "not_number": "Error: Grade must be a number",
+      "validation_error": "Error: {error}"
+    },
+    "delete": {
+      "title": "DELETING A GRADE",
+      "matricule": "Student ID",
+      "code": "Subject code",
+      "not_found": "Error: No grade found for this student in this subject",
+      "found": "Grade found: {note}/20",
+      "confirm": "Are you sure you want to delete this grade? (y/n): ",
+      "success": "✓ Grade deleted successfully",
+      "cancelled": "Deletion cancelled"
+    }
+  },
+  "consultation": {
+    "student_grades": {
+      "title": "STUDENT GRADES",
+      "matricule": "Student ID",
+      "not_found": "Error: No student found with ID {matricule}",
+      "student_info": "Student: {student}",
+      "count": "{count} grade(s) found:",
+      "no_grades": "No grades recorded",
+      "format": "  - {subject}: {note}/20 (Date: {date})"
+    },
+    "class_grades": {
+      "title": "CLASS GRADES FOR A SUBJECT",
+      "level": "Level/Class",
+      "code": "Subject code",
+      "subject_not_found": "Error: No subject found with code {code}",
+      "subject_info": "Subject: {subject}",
+      "class_info": "Class: {level}",
+      "count": "{count} student(s) in the class:",
+      "format": "  - {name} ({matricule}): {note}/20",
+      "no_note": "No grade"
+    },
+    "bulletin": {
+      "title": "COMPLETE STUDENT REPORT CARD",
+      "matricule": "Student ID",
+      "not_found": "Error: No student found with ID {matricule}",
+      "header": "GRADE REPORT CARD",
+      "student": "Student: {name}",
+      "matricule_label": "Student ID: {matricule}",
+      "level_label": "Level: {level}",
+      "columns": {
+        "subject": "Subject",
+        "note": "Grade",
+        "coef": "Coef",
+        "points": "Points"
+      },
+      "average": "Overall average: {average:.2f}/20",
+      "rank": "Class rank: {rank}{suffix}",
+      "rank_1": "st",
+      "rank_other": "th",
+      "no_grades": "No grades recorded"
+    }
+  },
+  "statistics": {
+    "student": {
+      "title": "STATISTICS BY STUDENT",
+      "matricule": "Student ID",
+      "not_found": "Error: No student found with ID {matricule}",
+      "student_info": "Student: {student}",
+      "average": "Overall average: {average:.2f}/20",
+      "no_average": "Overall average: No grades",
+      "rank": "Class rank: {rank}{suffix}",
+      "rank_1": "st",
+      "rank_other": "th",
+      "no_rank": "Class rank: Not calculable"
+    },
+    "class": {
+      "title": "STATISTICS BY CLASS",
+      "level": "Level/Class",
+      "class_info": "Class: {level}",
+      "average": "Class overall average: {average:.2f}/20",
+      "no_average": "Overall average: No grades",
+      "best_student": "Best student: {name} ({matricule})",
+      "best_average": "Average: {average:.2f}/20",
+      "ranking_title": "Complete ranking ({count} student(s)):",
+      "ranking_columns": {
+        "rank": "Rank",
+        "student": "Student",
+        "average": "Average"
+      }
+    },
+    "subject": {
+      "title": "STATISTICS BY SUBJECT",
+      "code": "Subject code",
+      "subject_not_found": "Error: No subject found with code {code}",
+      "subject_info": "Subject: {name} ({code})",
+      "average": "Overall average: {average:.2f}/20",
+      "no_average": "Overall average: No grades",
+      "best_student": "Best student: {name} ({matricule})",
+      "best_note": "Grade: {note:.2f}/20"
+    },
+    "global": {
+      "title": "GLOBAL STATISTICS",
+      "average": "Institution overall average: {average:.2f}/20",
+      "no_average": "Overall average: No grades",
+      "best_student_title": "Best student in the institution:",
+      "best_student": "  {name} ({matricule})",
+      "best_level": "  Level: {level}",
+      "best_average": "  Average: {average:.2f}/20",
+      "total_students": "Total number of students: {count}",
+      "total_subjects": "Total number of subjects: {count}",
+      "total_grades": "Total number of grades: {count}"
+    }
+  },
+  "common": {
+    "press_enter": "Press Enter to continue...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "modify": "Modify",
+    "add": "Add",
+    "save": "Save",
+    "search": "Search",
+    "list": "List",
+    "back": "Back"
+  },
+  "gui": {
+    "sidebar": {
+      "logo": "📊 GradeMaster",
+      "dashboard": "📈 Dashboard",
+      "students": "👥 Students",
+      "subjects": "📚 Subjects",
+      "grades": "✓ Grades",
+      "consultation": "💬 Consultation",
+      "statistics": "📊 Reports",
+      "settings": "SETTINGS",
+      "settings_button": "⚙️ Settings",
+      "profile": "👤 Admin user\nadmin@school.edu"
+    },
+    "header": {
+      "logo": "🛡️ GradeMaster Admin",
+      "greeting_morning": "Good morning, Admin",
+      "greeting_afternoon": "Good afternoon, Admin",
+      "greeting_evening": "Good evening, Admin",
+      "sync_message": "Here is today's overview. Data last synced: Just now.",
+      "import_data": "☁️ Import Data",
+      "new_entry": "➕ New Entry"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "total_students": "TOTAL STUDENTS",
+      "active_subjects": "ACTIVE SUBJECTS",
+      "grades_pending": "GRADES PENDING",
+      "average_gpa": "AVERAGE GPA",
+      "quick_actions": "Quick Actions",
+      "add_student": "➕\nAdd New Student",
+      "enter_grades": "✏️\nEnter Grades",
+      "print_report": "🖨️\nPrint Report Card",
+      "enrollment_chart": "Enrollment by Grade",
+      "enrollment_subtitle": "Distribution for current term",
+      "gpa_trend": "Average GPA Trend",
+      "gpa_trend_subtitle": "Academic Year 2024-2025",
+      "across_classes": "Across {count} classes",
+      "across_levels": "Across {count} levels",
+      "total_recorded": "Total grades recorded",
+      "overall_average": "Overall average"
+    },
+    "grades": {
+      "title": "Grade Entry",
+      "add_button": "➕ Record a grade",
+      "student": "Student:",
+      "subject": "Subject:",
+      "note": "Grade (0-20):",
+      "date": "Date:",
+      "save": "Save",
+      "columns": {
+        "student": "Student",
+        "subject": "Subject",
+        "note": "Grade",
+        "date": "Date"
+      }
+    }
+  }
+}
+
